@@ -1,0 +1,39 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+GitWorkAround/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.iml
+out/
+target/
+
+# C#
+bin/
+obj/
+*.suo
+*.user
+*.rsuser
+*.userprefs
+*.dll
+*.exe
+*.pdb
+*.app
+*.ipa
+*.dylib
+*.so
+*.idb
+*.cache
+*.tmp
+*.pids
