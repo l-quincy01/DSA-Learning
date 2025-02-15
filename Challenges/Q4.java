@@ -1,4 +1,4 @@
-public class NthNumber{
+public class Q4{
 
     public static int findNthNumber(int n){
 

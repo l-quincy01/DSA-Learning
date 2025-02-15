@@ -1,3 +1,4 @@
+package Other.LanguageSpecific.Java.LinkedLIst;
 //Custom singly linked list
 
 import java.util.*;

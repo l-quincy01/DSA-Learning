@@ -1,3 +1,4 @@
+package Other.LanguageSpecific.Java.Search;
 
 class BinarySearchAlgo {
 
