@@ -1,1 +1,1 @@
-# Common Data Structures and Algorithms (DSA) Problems
+# Common Data Structures and Algorithms Problems
