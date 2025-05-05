@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class BestApartmentBlock {
+public class BestApartmentBlockGoogle {
 
     public int getSum(HashMap<String, Integer> map) {
         int dist = 0;

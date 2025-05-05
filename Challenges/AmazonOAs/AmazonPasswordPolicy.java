@@ -3,15 +3,16 @@ public class AmazonPasswordPolicy {
 
     public static String isSimilar(String newPass, String oldPass) {
 
+        //2 pointers
         int newPass_pointer = 0;
         int oldPass_pointer = 0;
 
         while (newPass_pointer < newPass.length() && oldPass_pointer < oldPass.length()) {
 
             char newPassChar = newPass.charAt(newPass_pointer);
-            char oldPassChar = oldPass.charAt(oldPass_pointer); // ✅ fixed
+            char oldPassChar = oldPass.charAt(oldPass_pointer);
 
-            // ✅ Correct cyclic shift
+            //  cyclic shift
             char nextChar_For_NewPassChar = (char) (((newPassChar - 'a' + 1) % 26) + 'a');
 
             if (newPassChar == oldPassChar || nextChar_For_NewPassChar == oldPassChar) {
