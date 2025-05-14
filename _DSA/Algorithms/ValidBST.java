@@ -22,7 +22,7 @@ public class ValidBST {
         }
     }
 
-    public boolean isValid(TreeNode node, int left, int right) {
+    public boolean isValid(TreeNode node, long left, long right) {
 
         if (node == null) {
             return true;
@@ -38,7 +38,7 @@ public class ValidBST {
 
     public boolean isValidBST(TreeNode root) {
 
-        return isValid(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return isValid(root, Long.MIN_VALUE, Long.MAX_VALUE);
 
     }
 
