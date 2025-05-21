@@ -26,7 +26,7 @@ class EncodeDecodeStrings {
             while (str.charAt(j) != '#') {
                 j++;
             }
-            int length = Integer.parseInt(str.substring(i, j)); // get the encoded length
+            int length = Integer.parseInt(str.substring(i, j)); // get the encoded length that we put in the encode function
 
             i = j + 1; //skip the #
             lst.add(str.substring(i, i + length));
@@ -37,7 +37,7 @@ class EncodeDecodeStrings {
     }
 
     public static void main(String[] args) {
-        List<String> input = Arrays.asList("7#leet9#9#9#", "#4#code", "#123");
+        List<String> input = Arrays.asList("8#7leet999", "#4#code", "#123");
         String encoded = encode(input);
         List<String> decoded = decode(encoded);
         System.out.println(decoded); // [leet, code, 123]

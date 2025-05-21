@@ -17,15 +17,17 @@ class TreeNode {
 }
 ```
 
----
 
-## 🧭 Depth-First Search (DFS) Traversals
+ <br /> <br />
+
+
+#  Depth-First Search (DFS) Traversals
 
 DFS traversals go deep down a branch before backtracking.
 
----
 
-### 1️⃣ Inorder Traversal (Left → Root → Right)
+
+## 1 Inorder Traversal (Left → Root → Right)
 
 #### ✅ Use Cases:
 - Binary Search Trees (BST): returns values in sorted order.
@@ -41,7 +43,7 @@ void inorder(TreeNode root) {
     inorder(root.right);
 }
 ```
-
+<!-- 
 #### 🔁 Iterative:
 
 ```java
@@ -58,11 +60,11 @@ void inorderIterative(TreeNode root) {
         curr = curr.right;
     }
 }
-```
+``` -->
 
----
+ <br />
 
-### 2️⃣ Preorder Traversal (Root → Left → Right)
+## 2  Preorder Traversal (Root → Left → Right)
 
 #### ✅ Use Cases:
 - Cloning trees
@@ -80,7 +82,7 @@ void preorder(TreeNode root) {
 }
 ```
 
-#### 🔁 Iterative:
+<!-- #### 🔁 Iterative:
 
 ```java
 void preorderIterative(TreeNode root) {
@@ -94,11 +96,11 @@ void preorderIterative(TreeNode root) {
         if (node.left != null) stack.push(node.left);
     }
 }
-```
+``` -->
 
----
+ <br />
 
-### 3️⃣ Postorder Traversal (Left → Right → Root)
+## 3 Postorder Traversal (Left → Right → Root)
 
 #### ✅ Use Cases:
 - Deleting/freeing tree
@@ -116,7 +118,7 @@ void postorder(TreeNode root) {
 }
 ```
 
-#### 🔁 Iterative (Two Stack Method):
+<!-- #### 🔁 Iterative (Two Stack Method):
 
 ```java
 void postorderIterative(TreeNode root) {
@@ -134,15 +136,15 @@ void postorderIterative(TreeNode root) {
         System.out.print(stack2.pop().val + " ");
     }
 }
-```
+``` -->
 
----
+ <br /> <br />
 
-## 🌐 Breadth-First Search (BFS)
+# 🌐 Breadth-First Search (BFS)
 
----
 
-### 4️⃣ Level Order Traversal
+
+## 4 Level Order Traversal
 
 #### ✅ Use Cases:
 - Finding shortest path in unweighted trees
@@ -165,25 +167,7 @@ void levelOrder(TreeNode root) {
 }
 ```
 
-#### 📦 With Level Tracking:
 
-```java
-void levelOrderWithLevels(TreeNode root) {
-    if (root == null) return;
-    Queue<TreeNode> queue = new LinkedList<>();
-    queue.offer(root);
-    while (!queue.isEmpty()) {
-        int levelSize = queue.size();
-        for (int i = 0; i < levelSize; i++) {
-            TreeNode node = queue.poll();
-            System.out.print(node.val + " ");
-            if (node.left != null) queue.offer(node.left);
-            if (node.right != null) queue.offer(node.right);
-        }
-        System.out.println(); // new line for next level
-    }
-}
-```
 
 ---
 
