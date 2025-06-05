@@ -10,8 +10,8 @@ HashMap<(KEY_anyType), (VALUE_anyType)>
 
 for (var entry : map.entrySet()) {
             
-            dist = dist + entry.getValue()  ; // the value
-            dist = dist + entry.getKey()  ; // the key
+             entry.getValue()  ; // the value
+            entry.getKey()  ; // the key
         }
 
 

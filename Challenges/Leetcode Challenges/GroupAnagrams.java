@@ -13,7 +13,7 @@ public class GroupAnagrams {
         List<List<String>> result = new ArrayList<>();
         //map to store the group of anagrams
         HashMap<String, List<String>> map = new HashMap<>();
-
+       
         //loop through each string in the input
         for (String str : strs) {
             //sort the string into alphabetical order and use that sorted string as a key to determine an anagra

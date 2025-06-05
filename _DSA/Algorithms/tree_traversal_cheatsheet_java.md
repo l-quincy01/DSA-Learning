@@ -43,7 +43,7 @@ void inorder(TreeNode root) {
     inorder(root.right);
 }
 ```
-<!-- 
+
 #### 🔁 Iterative:
 
 ```java
@@ -60,7 +60,7 @@ void inorderIterative(TreeNode root) {
         curr = curr.right;
     }
 }
-``` -->
+``` 
 
  <br />
 
@@ -82,7 +82,7 @@ void preorder(TreeNode root) {
 }
 ```
 
-<!-- #### 🔁 Iterative:
+#### 🔁 Iterative:
 
 ```java
 void preorderIterative(TreeNode root) {
@@ -96,7 +96,7 @@ void preorderIterative(TreeNode root) {
         if (node.left != null) stack.push(node.left);
     }
 }
-``` -->
+``` 
 
  <br />
 
@@ -118,7 +118,7 @@ void postorder(TreeNode root) {
 }
 ```
 
-<!-- #### 🔁 Iterative (Two Stack Method):
+#### 🔁 Iterative (Two Stack Method):
 
 ```java
 void postorderIterative(TreeNode root) {
@@ -136,7 +136,7 @@ void postorderIterative(TreeNode root) {
         System.out.print(stack2.pop().val + " ");
     }
 }
-``` -->
+``` 
 
  <br /> <br />
 
