@@ -1,14 +1,18 @@
+package Other;
+
 import java.util.*;
 
 public class Q3 {
+
     public boolean areAlmostEqual(String s1, String s2) {
 
         // edge cases
-        if (s1.length() != s2.length())
+        if (s1.length() != s2.length()) {
             return false; // if this passes then the lengths must be equal
-        if (s1.length() == 1)
-            return s1.charAt(0) == s2.charAt(0); // there is only 1 character to check
 
+                }if (s1.length() == 1) {
+            return s1.charAt(0) == s2.charAt(0); // there is only 1 character to check
+        }
         if (s1.length() == 2) {
             List<Character> lst = new ArrayList<>();
 
@@ -39,8 +43,9 @@ public class Q3 {
             }
 
         }
-        if (outOfPlaceCount > 2)
+        if (outOfPlaceCount > 2) {
             return false;
+        }
 
         return true;
     }

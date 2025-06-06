@@ -1,3 +1,5 @@
+package Other;
+
 public class DiamondShape {
 
     public static void main(String[] args) {

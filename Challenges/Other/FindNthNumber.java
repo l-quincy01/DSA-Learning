@@ -1,32 +1,30 @@
-public class Q4{
+package Other;
 
-    public static int findNthNumber(int n){
+public class FindNthNumber {
 
-        int[] arr = new int[n+1] ;
+    public static int findNthNumber(int n) {
 
-        for(int i = 1; i < n+1; i++){
+        int[] arr = new int[n + 1];
 
-            if( i<=4){
-                arr[i] = i ;
-          
+        for (int i = 1; i < n + 1; i++) {
+
+            if (i <= 4) {
+                arr[i] = i;
+
+            } else if (i > 4) {
+
+                arr[i] += arr[i - 1] + arr[i - 2] + arr[i - 3] + arr[i - 4];
+
             }
-             else if(i > 4){
 
-                 arr[i] +=     arr[i-1] +  arr[i-2]  + arr[i-3]  + arr[i-4]  ;
-             
-             }
-            
         }
 
-       return arr[n] ;
+        return arr[n];
     }
-
-
 
     public static void main(String[] args) {
 
-        System.out.println(findNthNumber(6)) ;
- 
+        System.out.println(findNthNumber(6));
 
     }
 }

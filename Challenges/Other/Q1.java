@@ -1,13 +1,11 @@
+package Other;
 
-    // Online Java Compiler
+// Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 import java.util.*;
 
 public class Q1 {
 
-
-
-    
     public static String destination(List<List<String>> paths) {
         String output = "";
 
@@ -30,16 +28,14 @@ public class Q1 {
 
         return output;
     }
-    
+
     public static void main(String[] args) {
         List<List<String>> paths = Arrays.asList(
-            Arrays.asList("London", "New York"),
-            Arrays.asList("New York", "Lima"),
-            Arrays.asList("Lima", "Sao Paulo")
+                Arrays.asList("London", "New York"),
+                Arrays.asList("New York", "Lima"),
+                Arrays.asList("Lima", "Sao Paulo")
         );
 
         System.out.println("Destination City: " + destination(paths));
     }
 }
-
-    

@@ -1,3 +1,5 @@
+package Other;
+
 import java.util.*;
 
 public class Q2 {
@@ -33,7 +35,7 @@ public class Q2 {
 
     public static void main(String[] args) {
 
-        int[][] matrix = new int[][] { { 1, 2, 3 }, { 3, 1, 2 }, { 2, 3, 1 } };
+        int[][] matrix = new int[][]{{1, 2, 3}, {3, 1, 2}, {2, 3, 1}};
         System.out.println(matrixCheck(matrix));
     }
 
