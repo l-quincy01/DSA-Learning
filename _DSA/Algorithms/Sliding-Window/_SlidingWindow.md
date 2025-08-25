@@ -1,5 +1,23 @@
 # Sliding Window
 
+A technique to efficiently process a subset of Data, by focusing on only the most relevant portion in a gien time
+
+### Types
+`1.` Fixed sliding window. The window has/maintains a fixed constant length.
+Applicable  for find subarrays or substrings of a fixed length
+
+## `Questions`
+
+1.  Maximum Average Subarray I. You are given an integer array nums consisting of n elements, and an integer k.
+ Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10-5 will be accepted.
+
+
+
+
+`2.` Dynamic sliding window. Window size expands or contracts based on conditions.
+
+Applicable  for  find longest or shortest subarray/substring that satisfies a condition
+
 ### Python
 
 ```python

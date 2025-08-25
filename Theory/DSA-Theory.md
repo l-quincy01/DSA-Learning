@@ -155,11 +155,12 @@ Big O notation describes the upper bound of an algorithm's time or space complex
 
 ### Hash Tables
 
-**Definition:** Hashtables are a type of data structure in which the address/index value of the data element is generated from a hash function, enabling fast data access.
+**Definition:** `Hashtables are a type of data structure in which the index of an  element is generated from a hash function, enabling fast data access.`
 <br/>
 OR
 <br/>
-A data structure that implements an associative array using a hash function to compute an index into an array of buckets.
+
+`A data structure that implements an associative array using a hash function to compute an index into an array of buckets.`
 
 **Hash Functions:**
 - Should distribute keys uniformly
@@ -174,22 +175,12 @@ A data structure that implements an associative array using a hash function to c
 - Performance degrades gracefully
 - Requires extra memory for pointers
 
-**Open Addressing:**
-- All elements stored in the hash table array
-- When collision occurs, probe for next available slot
-- Types: Linear probing, quadratic probing, double hashing
-- Better cache performance
-- Can suffer from clustering
 
 **Operations:**
 - Insert: O(1) average, O(n) worst case
 - Delete: O(1) average, O(n) worst case
 - Search: O(1) average, O(n) worst case
 
-**Load Factor:**
-- Ratio of number of elements to number of buckets
-- Affects performance and collision probability
-- Typically kept below 0.75 for good performance
 
 **Use Cases:**
 - Database indexing
